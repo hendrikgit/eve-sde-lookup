@@ -1,5 +1,5 @@
-# eve-typeid-lookup
-Creates JSON files to lookup typeIDs by name. Uses CCPs STATIC DATA EXPORT (SDE).
+# eve-sde-lookup
+Uses CCPs Static Data Export (SDE) to create JSON files to lookup information like typeIDs by name.
 
 The typeID can be used to get pictures from [CCPs image server](https://imageserver.eveonline.com/) for example.
 
