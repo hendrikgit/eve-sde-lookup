@@ -11,6 +11,11 @@ echo "Downloading $SDEURL to sde.zip"
 wget $SDEURL -O sde.zip
 
 echo "Extracting required YAML files from sde.zip"
-unzip -j sde.zip sde/fsd/categoryIDs.yaml sde/fsd/groupIDs.yaml sde/fsd/typeIDs.yaml
+unzip -j sde.zip \
+  sde/fsd/categoryIDs.yaml \
+  sde/fsd/groupIDs.yaml \
+  sde/fsd/typeIDs.yaml \
+  sde/bsd/dgmAttributeTypes.yaml \
+  sde/bsd/dgmTypeAttributes.yaml
 
 popd > /dev/null
