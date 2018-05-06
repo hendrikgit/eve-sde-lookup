@@ -8,6 +8,6 @@ CATEGORIES = ['Ship', 'Module', 'Charge']
 
 ids = SDE::get_type_ids_for_categories(CATEGORIES)
 
-for cname in CATEGORIES do
-  File.write("type_ids_#{cname.downcase}.json", ids[cname].to_json)
+CATEGORIES.each do |category|
+  File.write("type_ids_#{category.downcase}.json", ids[category].to_json)
 end
